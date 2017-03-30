@@ -1,0 +1,7 @@
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.BizLogic.dll
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.BizLogic.pdb
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.Entities.dll
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.Entities.pdb
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.csprojResolveAssemblyReference.cache
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.dll
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.pdb
