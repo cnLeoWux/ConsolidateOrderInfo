@@ -6,6 +6,20 @@ using Microsoft.Office.Interop.Excel;
 
 namespace Consolidate.BizLogic
 {
+    /// <summary>
+    /// Consolidate Business logic
+    /// Author: Leo Wu
+    /// Create Date: 2017-3-30
+    /// Descript:
+    /// 1. Get Reference sheet Order Id, Vendor and Amount columns index.
+    /// 2. Get Original sheet Order Id column index.
+    /// 3. Read Reference sheet, generate and filling Reference Data list.
+    /// 4. Group by Vendor Name attribute in Reference Data list. then generate and filling Vendor Data list.
+    /// 5. Add Vendor name column in Original sheet by Vendor Data list.
+    /// 6. Consolidate Original sheet data and Reference sheet data, use Order Id is Key column then filling Vendor name column.
+    /// 7. All have consolidated Reference Data list data, change HaveConsolidate column to current datetime.
+    /// 8. Write back Reference Have Consoliadate column data to Reference sheet.
+    /// </summary>
     public class ConsolidateBiz
     {
         private int _orderIdColumnIndex = 0;
@@ -17,6 +31,7 @@ namespace Consolidate.BizLogic
         private List<ReferenceData> _referenceDataList;
         private List<VendorInfo> _vendorInfoList;
 
+        #region Consolidate Original sheet and Reference sheet main method, trigger other business logic method 
         public bool Consolidate(Worksheet original,Worksheet reference,out string errorMsg)
         {
             errorMsg = string.Empty;
@@ -63,6 +78,7 @@ namespace Consolidate.BizLogic
             
             return true;
         }
+        #endregion
 
         #region Get Reference Column Index
         private void GetReferenceColumnIndex(Worksheet reference, out string errorMsg)
