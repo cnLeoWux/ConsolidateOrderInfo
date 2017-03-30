@@ -14,13 +14,7 @@ namespace OrderInfoConsolidate
 
         private void Ribbon_Load(object sender, RibbonUIEventArgs e)
         {
-            RibbonDropDownItem defOriginItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
-            defOriginItem.Label = originalDefItem;
-            ddlOriginalSheet.Items.Add(defOriginItem);
-
-            RibbonDropDownItem defRefItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
-            defRefItem.Label = referenceDefItem;
-            ddlRefSheet.Items.Add(defRefItem);
+            InitDropDownList();
         }
 
         #region Start Consolidate
@@ -98,7 +92,9 @@ namespace OrderInfoConsolidate
             {
                 return;
             }
-            
+
+            InitDropDownList();
+
             foreach (Worksheet workSheet in _sheets)
             {
                 RibbonDropDownItem item = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
@@ -117,5 +113,18 @@ namespace OrderInfoConsolidate
             ddlRefSheet.SelectedItemIndex = 0;
         }
         #endregion
+
+        private void InitDropDownList()
+        {
+            ddlOriginalSheet.Items.Clear();
+            RibbonDropDownItem defOriginItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
+            defOriginItem.Label = originalDefItem;
+            ddlOriginalSheet.Items.Add(defOriginItem);
+
+            ddlRefSheet.Items.Clear();
+            RibbonDropDownItem defRefItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
+            defRefItem.Label = referenceDefItem;
+            ddlRefSheet.Items.Add(defRefItem);
+        }
     }
 }

@@ -14,13 +14,7 @@ namespace Consolidate.Excel2010
 
         private void Ribbon_Load(object sender, RibbonUIEventArgs e)
         {
-            RibbonDropDownItem defOriginItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
-            defOriginItem.Label = originalDefItem;
-            ddlOriginalSheet.Items.Add(defOriginItem);
-
-            RibbonDropDownItem defRefItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
-            defRefItem.Label = referenceDefItem;
-            ddlRefSheet.Items.Add(defRefItem);
+            InitDropDownList();
         }
 
         #region Load Drop Down list
@@ -36,7 +30,9 @@ namespace Consolidate.Excel2010
             {
                 return;
             }
-            
+
+            InitDropDownList();
+
             foreach (Worksheet workSheet in _sheets)
             {
                 RibbonDropDownItem item = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
@@ -117,5 +113,17 @@ namespace Consolidate.Excel2010
         }
         #endregion
 
+        private void InitDropDownList()
+        {
+            ddlOriginalSheet.Items.Clear();
+            RibbonDropDownItem defOriginItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
+            defOriginItem.Label = originalDefItem;
+            ddlOriginalSheet.Items.Add(defOriginItem);
+
+            ddlRefSheet.Items.Clear();
+            RibbonDropDownItem defRefItem = Globals.Factory.GetRibbonFactory().CreateRibbonDropDownItem();
+            defRefItem.Label = referenceDefItem;
+            ddlRefSheet.Items.Add(defRefItem);
+        }
     }
 }
