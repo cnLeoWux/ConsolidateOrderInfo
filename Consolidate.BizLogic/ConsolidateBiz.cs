@@ -49,8 +49,8 @@ namespace Consolidate.BizLogic
                 {
                     return false;
                 }
-                //Filling Entities
-                FillingEntities(reference, out errorMsg);
+                //Filling Reference Entities
+                FillingReferenceEntities(reference, out errorMsg);
                 if (!string.IsNullOrWhiteSpace(errorMsg))
                 {
                     return false;
@@ -180,7 +180,7 @@ namespace Consolidate.BizLogic
         #endregion
 
         #region Read Reference Sheet, Filling Entities
-        private void FillingEntities(Worksheet reference, out string errorMsg)
+        private void FillingReferenceEntities(Worksheet reference, out string errorMsg)
         {
             errorMsg = string.Empty;
             _referenceDataList = new List<ReferenceData>();
@@ -223,8 +223,8 @@ namespace Consolidate.BizLogic
 
                     ReferenceData data = new ReferenceData
                     {
-                        OrderId = orderIdCellValue.ToString(),
-                        VendorName = vendorCellValue.ToString(),
+                        OrderId = orderIdCellValue.ToString().Trim(),
+                        VendorName = vendorCellValue.ToString().Trim(),
                         Amount = amountValue
                     };
                     _referenceDataList.Add(data);
@@ -283,7 +283,7 @@ namespace Consolidate.BizLogic
                 }
                 else
                 {
-                    List<ReferenceData> queryResult = _referenceDataList.Where(e => e.OrderId == orderIdCellValue.ToString()).ToList();
+                    List<ReferenceData> queryResult = _referenceDataList.Where(e => e.OrderId == orderIdCellValue.ToString().Trim()).ToList();
                     if(queryResult.Count > 0)
                     {
                         foreach(VendorInfo vendor in _vendorInfoList)

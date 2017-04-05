@@ -2,3 +2,4 @@ C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\bin\Debug\Consolidate
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\bin\Debug\Consolidate.Entities.pdb
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.dll
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.pdb
+C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.csprojResolveAssemblyReference.cache
