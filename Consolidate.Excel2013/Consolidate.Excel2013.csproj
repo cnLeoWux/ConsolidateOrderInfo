@@ -227,10 +227,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Consolidate.Excel2013_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>2CA8F808D26F74A2772032632582E2EC26B2B496</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9116849CFD2D3700AFBBB7C1CA224545450AC66B</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>

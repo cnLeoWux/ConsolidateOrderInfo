@@ -5,3 +5,10 @@ C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.csprojResolveAssemblyReference.cache
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.dll
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.pdb
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.BizLogic.dll
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.BizLogic.pdb
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.Entities.dll
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\bin\Debug\Consolidate.Entities.pdb
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.csprojResolveAssemblyReference.cache
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.dll
+D:\Source\ConsolidateOrderInfo\Consolidate.BizLogic\obj\Debug\Consolidate.BizLogic.pdb

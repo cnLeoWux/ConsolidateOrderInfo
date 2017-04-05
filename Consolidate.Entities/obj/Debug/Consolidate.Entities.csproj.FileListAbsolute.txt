@@ -3,3 +3,8 @@ C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\bin\Debug\Consolidate
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.dll
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.pdb
 C:\WorkSpace\Git\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.csprojResolveAssemblyReference.cache
+D:\Source\ConsolidateOrderInfo\Consolidate.Entities\bin\Debug\Consolidate.Entities.dll
+D:\Source\ConsolidateOrderInfo\Consolidate.Entities\bin\Debug\Consolidate.Entities.pdb
+D:\Source\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.csprojResolveAssemblyReference.cache
+D:\Source\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.dll
+D:\Source\ConsolidateOrderInfo\Consolidate.Entities\obj\Debug\Consolidate.Entities.pdb
